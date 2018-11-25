@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+{% for css in page.css %}
+    <link rel="stylesheet" type="text/css" href="/assets/{{ css }}" />
+{% endfor %}
+   <head>
+    <meta charset="utf-8">
+	<link rel="icon" href="/assets/images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>chestnuts - {{ page.title | escape }}</title>
+
+  </head>
+
+  <body>
+  	<div class="site-container">
+		<header class="site-header">
+			<div class="title">
+				<p>this portion is going to be styled to be the header</p>
+				<p>goals for this section playground:</p>
+				<ul>
+					<li>put a border around it</li>
+					<li>change the color</li>
+					<li>align the text differently than the body</li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="nav-primary">
+			<p><a href="/about/">about</a></p>
+		</nav>
+
+    {{ content }}
+    </div>
+  </body>
+</html>

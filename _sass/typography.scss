@@ -1,0 +1,24 @@
+body {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: #dedede;
+    background: #735959;
+
+    a { color: #fff; }
+}
+
+.site-header { 
+	background: #475368;
+	border: double;
+	text-align: center;
+
+		ul {
+		list-style-type: none;
+		}
+}
+
+.nav-primary {
+	background: #95A5A6;
+	padding: 20px;
+	text-align: right;
+	
+}
