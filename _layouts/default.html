@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-{% for css in page.css %}
-    <link rel="stylesheet" type="text/css" href="/assets/{{ css }}" />
-{% endfor %}
-   <head>
+  <head>
     <meta charset="utf-8">
-	<link rel="icon" href="/assets/images/favicon.ico">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="icon" href="/assets/images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>chestnuts - {{ page.title | escape }}</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ '/assets/scripts/main.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+    {% for css in page.css %}
+        <link rel="stylesheet" type="text/css" href="/assets/{{ css }}" />
+    {% endfor %}
+
+      <title>{{ page.title | escape }}</title>
   </head>
-
   <body>
-  	<div class="site-container">
-		<header class="site-header">
-			<div class="title">
-				<p>this portion is going to be styled to be the header</p>
-				<p>goals for this section playground:</p>
-				<ul>
-					<li>put a border around it</li>
-					<li>change the color</li>
-					<li>align the text differently than the body</li>
-				</ul>
-			</div>
-		</header>
+    <div class="container">
+      <div class="top-cluster">
+         <div class="page-header">
+          <a href="/">
+            <h1>example header<small>this is the header area</small></h1>
+          </a>
+        </div>
+          <!-- <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button> -->
+        <nav class="nav-primary">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+              </div>
+              <div class="col-sm-3">
+              </div>
+              <div class="col-sm-3">
+              </div>
+              <div class="col-sm-3">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button"><a href="/about/">about</a></button>
+                    <button class="dropdown-item" type="button"><a href="/testing/">testing</a></button>
+                    <button class="dropdown-item" type="button"><a href="/travel/">travel</a></button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>    
+        </nav>
+      </div>
+  
+    <div class="main">
+      <br>
 
-		<nav class="nav-primary">
-			<p><a href="/about/">about</a></p>
-		</nav>
+      {{ content }}
+      
+    </div>
 
-    {{ content }}
+    
     </div>
   </body>
 </html>
+
+
+
+
+
+<!-- <img src="https://kawaiidrawings.com/wp-content/uploads/golden-spiral-straight-lines-intro.jpg" alt="about" style="width:50px;height:60px;">
+
+
+
+
+
+
+ -->

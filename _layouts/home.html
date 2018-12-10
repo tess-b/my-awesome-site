@@ -1,15 +1,17 @@
 ---
 layout: default
+permalink: /home/
 ---
+
 
 <h2>{{ site.title }}</h2>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<p><a href="/about/">read more</a> about this site!</p>
+<div class="post-container">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title | downcase }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

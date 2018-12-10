@@ -1,1 +1,33 @@
-body { background: #29183e; }
+
+
+body { 
+  background: #fffaf0;
+  
+
+}
+
+.main {
+  text-align: center;
+  margin: 20px;
+}
+
+
+img {
+
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+border-radius: 40px;
+}
+
+p {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+  
+  .about-words {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+}

@@ -1,9 +1,12 @@
 ---
 layout: default
+css: post.css
 ---
-<h1>I'm a Post:</h1>
-<h2>{{ page.title }}</h2>
+
+<h2>{{ page.title | downcase }}</h2>
 
 {{ content }}
+
+<br>
 
 <p>Thanks for reading me!</p>

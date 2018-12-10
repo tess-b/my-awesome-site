@@ -1,4 +1,80 @@
-body { 
-margin: 4% 10%; 
+
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color: #528b8b;
+  background: #fffaf0;
+  margin: 0; 
+
+  a { color: #acb8a5; }
 }
+
+///top cluster///
+
+.top-cluster {
+}
+  
+
+///header///
+
+.page-header { 
+  // background: #dcdcdc;
+	border: none;
+	text-align: left;
+  margin: 0px;
+  padding: 50px 50px 50px 80px;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: normal;
+    color: #acb8a5;
+  }
+
+}
+
+///nav///
+
+.nav-primary {
+	border-top: 2px lightgrey solid;
+  border-bottom: 2px lightgrey solid;
+	padding: 20px;
+  
+	
+  .row {
+    text-align: center;
+  }
+
+  .dropdown {
+    position: relative;
+
+    ////trying to remove text decoration (underline in dropdown)///
+    .a {
+      text-decoration: none;
+    }
+  }
+}
+
+.post-container {
+
+  ul {
+  list-style: none;
+  }
+}
+
+
+
+.container{
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+
+///i just like this image, not sure what to do with it (drawn spiral straight lines)///
+
+///"https://kawaiidrawings.com/wp-content/uploads/golden-spiral-straight-lines-intro.jpg"///
+
+
 
