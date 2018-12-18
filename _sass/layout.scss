@@ -4,9 +4,13 @@ body {
   color: #528b8b;
   background: #fffaf0;
   margin: 0; 
+  padding: 0;
+  height: 100%;
+
 
   a { color: #acb8a5; }
 }
+
 
 ///top cluster///
 
@@ -20,7 +24,7 @@ body {
   // background: #dcdcdc;
 	border: none;
 	text-align: left;
-  margin: 0px;
+  margin: 23px;
   padding: 50px 50px 50px 80px;
 
   a {
@@ -37,9 +41,17 @@ body {
 ///nav///
 
 .nav-primary {
+  background: #fff;
 	border-top: 2px lightgrey solid;
   border-bottom: 2px lightgrey solid;
-	padding: 20px;
+  opacity: .6;
+	padding: 10px;
+  
+
+  .container {
+    margin-left: auto;
+    // margin-right: 0; ///add this if i want to move it over to the right after all///
+  }
   
 	
   .row {
@@ -49,18 +61,42 @@ body {
   .dropdown {
     position: relative;
 
-    ////trying to remove text decoration (underline in dropdown)///
-    .a {
-      text-decoration: none;
+    .btn-secondary {
+      opacity: .5;
+
     }
+}
+
+.dropdown.btn-secondary:visited {
+    box-shadow: 0;
+
   }
+
+.main {
+  margin-left: 200px;
+  margin-top: 75px;
 }
 
 .post-container {
 
+
   ul {
   list-style: none;
   }
+    a:hover {
+        text-decoration: none;
+    }
+
+    ///trying to get selected color to change///
+    // a::-moz-selection { /* Code for Firefox */
+    // color: red;
+    // background: yellow;
+    // }
+
+    // a::selection {
+    // color: red; 
+    // background: yellow;
+    // }
 }
 
 
@@ -69,6 +105,18 @@ body {
   flex-wrap: wrap;
   width: 100%;
 
+}
+
+.footer {
+  position:absolute;
+  background:#fff;
+  border-top: 2px lightgrey solid;
+  border-bottom: 2px lightgrey solid;
+  opacity: .6;
+  bottom:0;
+  width:100%;
+  height:40px;   /* Height of the footer */
+    
 }
 
 

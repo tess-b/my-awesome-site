@@ -17,17 +17,17 @@ img {
   width: 100%;
   max-width: 200px;
   height: auto;
-border-radius: 40px;
+  border-radius: 40px;
 }
 
 p {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   
   .about-words {
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 250px;
+    margin-right: 250px;
   }
 }

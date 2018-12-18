@@ -2,7 +2,7 @@
 layout: default
 title: about
 permalink: /about/
-css: blue-bg.css
+css: about-styling.css
 ---
 
 {% include stupid-snippet.html %}
