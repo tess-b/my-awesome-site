@@ -11,11 +11,6 @@ body {
   a { color: #acb8a5; }
 }
 
-
-///top cluster///
-
-.top-cluster {
-}
   
 
 ///header///
@@ -63,14 +58,11 @@ body {
 
     .btn-secondary {
       opacity: .5;
-
     }
-}
-
-.dropdown.btn-secondary:visited {
-    box-shadow: 0;
 
   }
+}
+
 
 .main {
   margin-left: 200px;
@@ -86,17 +78,6 @@ body {
     a:hover {
         text-decoration: none;
     }
-
-    ///trying to get selected color to change///
-    // a::-moz-selection { /* Code for Firefox */
-    // color: red;
-    // background: yellow;
-    // }
-
-    // a::selection {
-    // color: red; 
-    // background: yellow;
-    // }
 }
 
 
